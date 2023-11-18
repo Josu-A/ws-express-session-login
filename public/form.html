@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Josu Aginaga">
+    <meta name="description" content="Express session login form exercise">
+    <title>Login - Express</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/loginValidation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <main>
+        <form id="login-form" action="/user" method="post">
+            <fieldset>
+                <legend>Login form</legend>
+                <div class="input-field">
+                    <input type="text" name="username" id="username" placeholder="Enter Username">
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+                <div>
+                    <input type="submit" value="LogIn">
+                </div>
+            </fieldset>
+            <div id="error-message"></div>
+        </form>
+    </main>
+</body>
+</html>

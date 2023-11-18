@@ -1,9 +1,23 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
+router.get('/protected', (req,res) => {
+
+    if (req.session.userid) {
+        res.send("Welcome User <a href=\'/logout'>click to logout</a>");
+    }
+    else {
+        res.redirect('form.html');
+    }
+});
+
+router.get('/logout', (req,res) => {
+    req.session.destroy();
+    res.redirect('/');
 });
 
 module.exports = router;

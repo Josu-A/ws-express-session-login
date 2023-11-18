@@ -2,7 +2,7 @@
 
 ## Sarrera
 
-TODO
+Cookien erabileraren bitartez erabiltzaile kautotze sistema sinple baten eraiketa. Erabiltzaileak json fitxategi batean gordetzen dira, eta pasahitzak ez dute inolako hash/salt-ik.
 
 ## Build
 
