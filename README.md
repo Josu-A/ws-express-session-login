@@ -17,7 +17,7 @@ Biltegia klonatu:
 
 ```bash
 git clone https://github.com/Josu-A/ws-express-session-login.git
-cd ws-exoress-session-login
+cd ws-express-session-login
 ```
 
 npm dependenziak instalatu:
