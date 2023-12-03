@@ -18,6 +18,6 @@ jobs:
                       cd ~/apps/ws/session-login/
                       git pull
                       export NVM_DIR=~/.nvm
-                      source ~/.nvim/nvm.sh
+                      source ~/.nvm/nvm.sh
                       npm install
                       pm2 restart bin/www
